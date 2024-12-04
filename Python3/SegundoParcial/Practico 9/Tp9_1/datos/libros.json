@@ -1,0 +1,16 @@
+[
+    {
+        "titulo": "Harry Potter",
+        "autor": "Henry",
+        "genero": "Todos",
+        "anio": 2005,
+        "ISBN": "123456789"
+    },
+    {
+        "titulo": "Alicia",
+        "autor": "Jorgelina",
+        "genero": "Femenino",
+        "anio": 2001,
+        "ISBN": "987654321"
+    }
+]
