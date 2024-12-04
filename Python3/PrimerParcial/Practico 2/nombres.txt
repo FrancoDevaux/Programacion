@@ -1,0 +1,8 @@
+11111;alvarado;jorge
+22222;biena;ulises
+33333;clema;analia
+44444;ciulo;hano
+55555;devaux;franco
+66666;gustavo;paine
+77777;lopes;hernan
+88888;rama;lautaro
