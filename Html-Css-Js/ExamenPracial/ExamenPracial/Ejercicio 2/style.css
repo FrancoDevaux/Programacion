@@ -1,0 +1,25 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Imagen principal */
+.IMGprincipal {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.miniaturas {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.miniatura {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+}
