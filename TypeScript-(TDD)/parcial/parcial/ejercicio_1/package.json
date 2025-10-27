@@ -1,0 +1,17 @@
+{
+  "name": "ejercicios_typescript",
+  "type": "module",
+  "scripts": {
+    "dev": "npx tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
