@@ -1,0 +1,39 @@
+const { db } = require('../config/database');
+
+const getProducts = (req, res) => {
+  const { category, search } = req.query;
+
+  let query = 'SELECT * FROM products WHERE 1=1';
+
+  if (category) {
+    query += ` AND category = '${category}'`;
+  }
+
+  if (search) {
+    query += ` AND name LIKE '%${search}%'`;
+  }
+
+  db.query(query, (err, results) => {
+    if (err) {
+      return res.status(500).json({ error: err.message });
+    }
+    res.json(results);
+  });
+};
+
+// Obtener conteo de productos
+const getProductsCount = (req, res) => {
+  const query = 'SELECT COUNT(*) as count FROM products';
+  db.query(query, (err, results) => {
+    if (err) {
+      return res.status(500).json({ error: err.message });
+    }
+    res.json({ count: results[0].count });
+  });
+};
+
+
+module.exports = {
+  getProducts,
+  getProductsCount
+};
